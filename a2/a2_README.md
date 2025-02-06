@@ -4,16 +4,9 @@
 
 ## Marcus Martin
 
-### Class Number: LIS3781
+### Class Number: LIS3781 
 
-
-
-1. [A1 README.md](lis3781/A1_README.md "My A1 README.md file")
-    - Turn off server side validation
-    - Establish Database Connection
-    - Implement add functionality into database 
-
-2. [A2 README.md](lis3781/A2_README.md "My A2 README.md file")
+1. [A2 README.md](lis3781/A2_README.md "My A2 README.md file")
     - Create table company and customer
     - Grant privileges to user1 and user2 @localhost 
     - Populate tables with 5 entries  
