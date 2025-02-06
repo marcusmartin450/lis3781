@@ -8,11 +8,7 @@
 
 *Course Work Links:*
 
-1. [A1 README.md](a1/A1_README.md "My A1 README.md file")
-    - Install something
-    - Install something
-
-2. [A2 README.md](a2/A2_README.md "My A2 README.md file")
+1. [A2 README.md](a2/a2_README.md "My A2 README.md file")
 
     - Create table company and customer
     - Grant privileges to user1 and user2 @localhost 
