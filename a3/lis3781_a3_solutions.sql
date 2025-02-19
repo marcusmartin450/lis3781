@@ -1,3 +1,69 @@
+-- Create Customer Table
+CREATE TABLE customer (
+    cus_id NUMBER PRIMARY KEY,
+    first_name VARCHAR2(50),
+    last_name VARCHAR2(50),
+    address VARCHAR2(100),
+    city VARCHAR2(50),
+    state VARCHAR2(2),
+    zip NUMBER(5),
+    phone NUMBER(10),
+    email VARCHAR2(100),
+    balance NUMBER(10,2),
+    notes VARCHAR2(255)
+);
+
+-- Create Commodity Table
+CREATE TABLE commodity (
+    com_id NUMBER PRIMARY KEY,
+    com_name VARCHAR2(50),
+    com_price NUMBER(10,2),
+    com_description VARCHAR2(255)
+);
+
+-- Create Order Table
+CREATE TABLE "order" (
+    ord_id NUMBER(4,0) NOT NULL,
+    cus_id NUMBER,
+    com_id NUMBER,
+    ord_num_units NUMBER(5,0) NOT NULL,
+    ord_total_cost NUMBER(8,2) NOT NULL,
+    ord_notes VARCHAR(255),
+    CONSTRAINT pk_order PRIMARY KEY (ord_id),
+    CONSTRAINT fk_order_customer FOREIGN KEY (cus_id) REFERENCES customer(cus_id),
+    CONSTRAINT fk_order_commodity FOREIGN KEY (com_id) REFERENCES commodity(com_id),
+    CONSTRAINT check_unit CHECK (ord_num_units > 0),
+    CONSTRAINT check_total CHECK (ord_total_cost > 0)
+);
+
+-- Insert Data into Customer Table
+INSERT INTO customer VALUES (seq_cus_id.NEXTVAL, 'Beverly', 'Davis', '123 Main St.', 'Detroit', 'MI', 48252, 3135551212, 'bdavis@aol.com', 11500.99, 'recently moved');
+INSERT INTO customer VALUES (seq_cus_id.NEXTVAL, 'Stephen', 'Taylor', '456 Elm St.', 'St. Louis', 'MO', 57252, 8155551212, 'taylor@comcast.net', 25.01, NULL);
+INSERT INTO customer VALUES (seq_cus_id.NEXTVAL, 'Donna', 'Carter', '789 Beach Ave.', 'Los Angeles', 'CA', 48522, 3135551212, 'dcarter@wow.com', 300.99, 'returning customer');
+INSERT INTO customer VALUES (seq_cus_id.NEXTVAL, 'Robert', 'Silverman', '857 Wilbur Rd.', 'Phoenix', 'AZ', 25278, 4805551212, 'rsilverman@aol.com', NULL, NULL);
+INSERT INTO customer VALUES (seq_cus_id.NEXTVAL, 'Sally', 'Victors', '534 Holler Way', 'Charleston', 'WV', 78345, 9045551212, 'svictors@wow.com', 500.76, 'new customer');
+
+-- Insert Data into Commodity Table
+INSERT INTO commodity VALUES (seq_com_id.NEXTVAL, 'DVD & Player', 109.00, NULL);
+INSERT INTO commodity VALUES (seq_com_id.NEXTVAL, 'Cereal', 3.00, 'sugar free');
+INSERT INTO commodity VALUES (seq_com_id.NEXTVAL, 'Scrabble', 29.00, 'original');
+INSERT INTO commodity VALUES (seq_com_id.NEXTVAL, 'Licorice', 1.89, NULL);
+INSERT INTO commodity VALUES (seq_com_id.NEXTVAL, 'Tums', 2.45, 'antacid');
+
+-- Insert Data into Order Table
+INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 1, 2, 50, 200, NULL);
+INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 2, 3, 10, 300, NULL);
+INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 3, 4, 8, 64, NULL);
+INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 1, 5, 24, 972, NULL);
+INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 3, 2, 3, 45, NULL);
+INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 2, 4, 7, 770, NULL);
+INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 5, 3, 15, 883, NULL);
+
+-- Verify Data
+SELECT * FROM customer;
+SELECT * FROM commodity;
+SELECT * FROM order;
+
 --1
 SELECT * FROM v$version;
 
