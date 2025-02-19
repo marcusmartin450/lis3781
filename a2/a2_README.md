@@ -12,6 +12,8 @@
     - Populate tables with 5 entries  
 
 [text](lis3781_a2_solutions.sql)
+##### Users 
+![Invalid Immage](img/users.png) 
 ##### User 1 privilege
 ![Invalid Immage](img/user1error.png) 
 ##### User 2 privilege

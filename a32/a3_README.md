@@ -11,7 +11,7 @@
     - Format Tables properly 
     - Create SQL script 
 
-[text](lis3781_a3_solutions.sql)
+[text](../a3/lis3781_a3_solutions.sql)
 ##### Populated Tables
 ![Invalid Immage](img/populatetables.png) 
 ##### Continued
