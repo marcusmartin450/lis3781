@@ -12,11 +12,11 @@
     - Create SQL script 
 
 [text](lis3781_a3_solutions.sql)
+#### Code to make tables 
+![Valid Data](img/createtables.png)
+![Valid Data](img/createtables2.png)
 ##### Populated Tables
-![Invalid Immage](img/populatetables.png) 
-##### Continued
-![Invalid Immage](img/populatetables2.png) 
-##### Continued 
 ![Valid Data](img/populatetables3.png)
 ##### SQL statement with corresponding result 
 ![Valid Data](img/sqlexercise.png)
+
