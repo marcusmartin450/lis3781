@@ -11,6 +11,7 @@
     - Format Tables properly 
     - Create SQL script 
 
+#### LINK to My Solutions
 [text](lis3781_a3_solutions.sql)
 #### Code to make tables 
 ![Valid Data](img/createtables.png)
