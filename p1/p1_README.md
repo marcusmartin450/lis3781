@@ -12,8 +12,8 @@
     - Create SQL script 
 
 #### LINK to My Solutions
-[text](p1_solutions.sql)
-[text](p1_erd.mwb)
+[p1_solutions](p1_solutions.sql)
+[ERD_file](p1_erd.mwb)
 #### ERD Screenshot
 ![Valid Data](img/erd.png)
 #### Populated Tables 
