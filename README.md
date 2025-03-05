@@ -19,3 +19,10 @@
     - Create and populate oracle tables
     - Create SQL script using oracle sql 
     - Format Tables appropiately 
+
+3.  [p1 README.md](p1/p1_README.md "My P3 README.md file")
+
+    - Create and populate tables
+    - Create ERD
+    - Use stored procedures
+
