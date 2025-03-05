@@ -19,6 +19,6 @@
 #### Populated Tables 
 ![Valid Data](img/populatedtables.png)
 ##### SQL Code with report
-![Valid Data](img/sqlcode_withreport.png)
+![Valid Data](img/sqlcode.png)
 
 
