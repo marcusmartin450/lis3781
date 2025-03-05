@@ -59,10 +59,10 @@ INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 3, 2, 3, 45, NULL);
 INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 2, 4, 7, 770, NULL);
 INSERT INTO "order" VALUES (seq_ord_id.NEXTVAL, 5, 3, 15, 883, NULL);
 
--- Verify Data
 SELECT * FROM customer;
 SELECT * FROM commodity;
 SELECT * FROM order;
+
 
 --1
 SELECT * FROM v$version;
