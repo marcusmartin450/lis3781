@@ -28,7 +28,7 @@
 
 4.  [A4 README.md](a4/a4_README.md "My A4 README.md file")
 
-5.   [A5 README.md](lis3781/A5_README.md "My A5 README.md file")
+5.  [A5 README.md](lis3781/a5_README.md "My A5 README.md file")
     - Create Tables using T-SQL
     - Make ERD using MySQL managment 
     - Create stored procedures and triggers
