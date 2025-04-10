@@ -14,7 +14,7 @@
 #### LINK to My Solutions
 [text](a5_solutions.sql)
 #### ERD
-![Valid Data](img/a5.erd.png)
+![Valid Data](img/a5erd.png)
 ##### SQL statement with corresponding result 
 ![Valid Data](img/report2.png)
 
